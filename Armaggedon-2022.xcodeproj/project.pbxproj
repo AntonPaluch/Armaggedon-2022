@@ -10,9 +10,9 @@
 		027833EB9E2C2AC88B5AECF2 /* Pods_Armaggedon_2022.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D2AFA7AD041BC71DA4A0D6 /* Pods_Armaggedon_2022.framework */; };
 		7E9A11CB28130D4B00AFD2BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A11CA28130D4B00AFD2BA /* AppDelegate.swift */; };
 		7E9A11CD28130D4B00AFD2BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A11CC28130D4B00AFD2BA /* SceneDelegate.swift */; };
-		7E9A11CF28130D4B00AFD2BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A11CE28130D4B00AFD2BA /* ViewController.swift */; };
 		7E9A11D428130D4D00AFD2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E9A11D328130D4D00AFD2BA /* Assets.xcassets */; };
 		7E9A11D728130D4D00AFD2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9A11D528130D4D00AFD2BA /* LaunchScreen.storyboard */; };
+		7E9A11DF2813181A00AFD2BA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A11DE2813181A00AFD2BA /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,10 +21,10 @@
 		7E9A11C728130D4B00AFD2BA /* Armaggedon-2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Armaggedon-2022.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E9A11CA28130D4B00AFD2BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E9A11CC28130D4B00AFD2BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7E9A11CE28130D4B00AFD2BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E9A11D328130D4D00AFD2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E9A11D628130D4D00AFD2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E9A11D828130D4D00AFD2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E9A11DE2813181A00AFD2BA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		9775A7F50B1997E6E8437C84 /* Pods-Armaggedon-2022.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Armaggedon-2022.debug.xcconfig"; path = "Target Support Files/Pods-Armaggedon-2022/Pods-Armaggedon-2022.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +46,6 @@
 				9775A7F50B1997E6E8437C84 /* Pods-Armaggedon-2022.debug.xcconfig */,
 				725C3122F7A67218140FD330 /* Pods-Armaggedon-2022.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,12 +72,20 @@
 			children = (
 				7E9A11CA28130D4B00AFD2BA /* AppDelegate.swift */,
 				7E9A11CC28130D4B00AFD2BA /* SceneDelegate.swift */,
-				7E9A11CE28130D4B00AFD2BA /* ViewController.swift */,
 				7E9A11D328130D4D00AFD2BA /* Assets.xcassets */,
+				7E9A11E02813182A00AFD2BA /* Model */,
 				7E9A11D528130D4D00AFD2BA /* LaunchScreen.storyboard */,
 				7E9A11D828130D4D00AFD2BA /* Info.plist */,
 			);
 			path = "Armaggedon-2022";
+			sourceTree = "<group>";
+		};
+		7E9A11E02813182A00AFD2BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E9A11DE2813181A00AFD2BA /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9A5F27CB79D4BB0416168B8E /* Frameworks */ = {
@@ -203,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E9A11CF28130D4B00AFD2BA /* ViewController.swift in Sources */,
+				7E9A11DF2813181A00AFD2BA /* Model.swift in Sources */,
 				7E9A11CB28130D4B00AFD2BA /* AppDelegate.swift in Sources */,
 				7E9A11CD28130D4B00AFD2BA /* SceneDelegate.swift in Sources */,
 			);
@@ -273,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -327,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -352,6 +359,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,6 +388,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
