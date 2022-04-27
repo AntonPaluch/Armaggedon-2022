@@ -1,7 +1,7 @@
 // Api Key: Ora0kTOXkfIgq36UwRzswr0hKbcFsL99usVJWnHo
 // Api https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=
 
-struct AsteroidData: Decodable {
+struct Data: Decodable {
     let nearEarthObjects: [NearEarthObjects]
     
     enum CodingKeys: String, CodingKey {
